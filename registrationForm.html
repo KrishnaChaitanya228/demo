@@ -4,13 +4,29 @@
 	<title>Registration Form</title>
 </head>
 <body bgcolor="yellow">
-	<h2>Register here</h2><br><br>
-	<form>
-		<label for="name">Name : </label> 
-		<input type="text" name="name"><br><br>
-		<label for="course">Course : </label>
-		<input type="text" name="course"><br><br>
-		<input type="submit" name="submit">
-	</form>
+	<div align="center">
+		<h2>Register here</h2><br><br>
+		<form>
+			<label for="name">Name : </label>
+			<input type="text" name="name"><br><br>
+			<label for="number">Number : </label>
+			<input type="text" name="number"><br><br>
+			<p>Choice of course : </p>
+			<input type="radio" id="Bachelors" name="choiceOfCourse" value="Bachelors">
+			<label for="Bachelors">Bachelors</label><br>
+			<input type="radio" id="Masters" name="choiceOfCourse" value="Masters">
+			<label for="Masters">Masters</label><br><br>
+			<label for="Description">Description :</label><br>
+			<textarea name="message" rows="10" cols="30"></textarea><br><br>
+			<p>Subject Intrests : </p>
+			<input type="checkbox" id="dmt" name="si" value="dmt">
+			<label for="dmt">Data Mining Techniques</label><br>
+			<input type="checkbox" id="cn" name="si" value="cn">
+			<label for="cn">Computer Networks</label><br>
+			<input type="checkbox" id="cc" name="si" value="cc">
+			<label for="cc">Cloud Computing</label><br><br>
+			<input type="submit" name="submit">
+		</form>
+	</div>
 </body>
 </html>
