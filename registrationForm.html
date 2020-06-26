@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Registration Form</title>
 </head>
 <body bgcolor="yellow">
 	<div align="center">
 		<h2>Register here</h2><br><br>
-		<form>
+		<form action="main.jsp" method="POST">
 			<label for="name">Name : </label>
-			<input type="text" name="name"><br><br>
-			<label for="number">Number : </label>
-			<input type="text" name="number"><br><br>
+			<input type="text" name="name" placeholder="Enter name"><br><br>
+			<label for="mobileNumber">Mobile Number : </label>
+			<input type="text" name="mobileNumber" placeholder="Enter Mobile Number"><br><br>
+			<div align="center">
 			<p>Choice of course : </p>
 			<input type="radio" id="Bachelors" name="choiceOfCourse" value="Bachelors">
 			<label for="Bachelors">Bachelors</label><br>
 			<input type="radio" id="Masters" name="choiceOfCourse" value="Masters">
-			<label for="Masters">Masters</label><br><br>
+			<label for="Masters">Masters</label>
+			</div>
+			<br><br>
 			<label for="Description">Description :</label><br>
-			<textarea name="message" rows="10" cols="30"></textarea><br><br>
+			<textarea name="desc" rows="10" cols="30"></textarea><br><br>
 			<p>Subject Intrests : </p>
-			<input type="checkbox" id="dmt" name="si" value="dmt">
+			<input type="checkbox" id="dmt" name="dmt" value="dmt">
 			<label for="dmt">Data Mining Techniques</label><br>
-			<input type="checkbox" id="cn" name="si" value="cn">
+			<input type="checkbox" id="cn" name="cnn" value="cn">
 			<label for="cn">Computer Networks</label><br>
-			<input type="checkbox" id="cc" name="si" value="cc">
+			<input type="checkbox" id="cc" name="cc" value="cc">
 			<label for="cc">Cloud Computing</label><br><br>
 			<input type="submit" name="submit">
 		</form>
