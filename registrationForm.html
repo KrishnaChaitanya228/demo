@@ -4,19 +4,95 @@
 	<meta charset="utf-8">
 	<title>Registration Form</title>
 	<style>
-		.body{
+		body{
 			background-color: yellow;
+			align-content: center;
+			text-align: center;
+			position: relative;
 		}
 		.a{
 			align-content: center;
 		}
+		a:link, a:visited {
+		  background-color: #f44336;
+		  color: white;
+		  padding: 14px 25px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		}
+
+		a:hover, a:active {
+		  background-color: red;
+		}
+		button{
+		  background-color: #4CAF50; /* Green */
+		  border: none;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		}
+		img {
+		  width:300px;
+		  margin: auto;
+		  border: 4px solid red;
+		  float: left;
+		  top: 8px;
+		  left: 16px;
+		  background-attachment: scroll;
+		}
+		h2{
+			padding: 20px 20px 20px 20px;
+			font-size: 32px;
+			position: relative;
+			text-align: center;
+		}
+		[class$="none"]{
+			display: none;
+		}
+		form{
+			align-content: center;
+		}
+			.topnav {
+			  overflow: hidden;
+			  background-color: #333;
+			}
+
+			.topnav a {
+			  float: left;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 17px;
+			}
+
+			.topnav a:hover {
+			  background-color: #ddd;
+			  color: black;
+			}
+
+			.topnav a.active {
+			  background-color: blue;
+			  color: white;
+			}
 	</style>
 </head>
 <body>
+	<div class="topnav">
+		  <a class="active" href="home.html">Home</a>
+		  <a href="registrationForm.html">Registration</a>
+		  <a href="personalDetails.html">Personal Details</a>
+		</div>
 	<div class="a">
-		<h2>Register here</h2><br><br>
-		<form action="main.jsp" method="POST">
-			<label>Name : </label>
+		<img src="C://Users/palva/OneDrive/Desktop/vlabs.jpg" width="200" height="200">
+		<br><br><br><br><br><br><br><br><br><br><br>
+		<h2>Fill the below Registration details</h2><br><br>
+		<form action="main.jsp" method="POST" name="nameform">
+			<label>Name : </label><p class="none">(Full name)</p>
 			<input type="text" name="name" placeholder="Enter name"><br><br>
 			<label>Mobile Number : </label>
 			<input type="text" name="mobileNumber" placeholder="Enter Mobile Number"><br><br>
@@ -28,14 +104,21 @@
 			<br><br>
 			<label>Description :</label><br>
 			<textarea name="desc" rows="10" cols="30"></textarea><br><br>
-			<p>Subject Intrests : </p>
+			<p>Subject Interests : </p>
 			<input type="checkbox" id="dmt" name="dmt" value="dmt">
 			<label for="dmt">Data Mining Techniques</label><br>
 			<input type="checkbox" id="cn" name="cnn" value="cn">
 			<label for="cn">Computer Networks</label><br>
 			<input type="checkbox" id="cc" name="cc" value="cc">
 			<label for="cc">Cloud Computing</label><br><br>
-			<input type="submit" name="submit">
+			<input type="checkbox" id="sup" name="sup" value="sup">
+			<label for="cc">Statistics using Python</label><br><br>
+			<input type="checkbox" id="mpi" name="mpi" value="mpi">
+			<label for="cc">Microprocessor and Interfacing</label><br><br>
+			<input type="checkbox" id="orcs" name="orcs" value="orcs">
+			<label for="cc">Operational Research for Sciences</label><br><br>
+			<button type="submit" form="nameform" value="Submit">Submit</button>
+			<a href="second.html">Check the courses</a>
 		</form>
 	</div>
 </body>
