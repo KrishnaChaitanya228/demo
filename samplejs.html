@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample JS</title>
+</head>
+<body>
+	<h2><a href="JavaScript.html">About JavaScript</a></h2>
+	<br><br>
+	<h4>Multiplication of 10 and 5 using function:</h4>
+	<p id="demo"></p>
+	<br><h4><u>Math Functions:</u></h4><br>
+	<p id="demo1"></p><br><br>
+
+</body>
+
+
+<script type="text/javascript">
+		document.write("<br><br><h4>Creating two variables and displaying its values:</h4>");
+		var a=5;
+		var b=12;
+		document.write("<br>a="+a+",b="+b);
+		document.write("<br><br><h4>Typecasting an array element array[3] in [1,2,3,4,5]:</h4><br>");
+		var array=[1,2,3,4,5];
+		var num=array[3].toString();
+		document.write(num+"<br><br>");
+		document.write("<h4>Printing Total and Average of marks:</h4><br>");
+		var subjects=["WT","OS","PP","DS","SE","PE"];
+		var marks=[90,86,92,88,87,89];
+		var total=90+86+92+88+87+89;
+		var average=(total)/6;
+		document.write("<table>");
+		document.write("<tr><td>"+subjects[0]+"</td><td>"+marks[0]+"</td></tr>");
+		document.write("<tr><td>"+subjects[1]+"</td><td>"+marks[1]+"</td></tr>");
+		document.write("<tr><td>"+subjects[2]+"</td><td>"+marks[2]+"</td></tr>");
+		document.write("<tr><td>"+subjects[3]+"</td><td>"+marks[3]+"</td></tr>");
+		document.write("<tr><td>"+subjects[4]+"</td><td>"+marks[4]+"</td></tr>");
+		document.write("<tr><td>"+subjects[5]+"</td><td>"+marks[5]+"</td></tr>");
+		document.write("<tr><td>"+"Total"+"</td><td>"+total+"</td></tr>");
+		document.write("<tr><td>"+"Average"+"</td><td>"+average+"</td></tr></table><br><br>");
+		function myFunction(p1, p2) {
+  			return p1 * p2;
+		}
+		document.getElementById("demo").innerHTML = myFunction(10, 5);
+		var rand=Math.random();
+		document.getElementById("demo1").innerHTML = 
+			"<p><b>Math.pow(4,3)= : </b> " + Math.pow(4,3) + "</p>" +
+			"<p><b> Math.sqrt(16)=:</b> " + Math.sqrt(16) + "</p>" +
+			"<p><b>Math.abs(-4.6)=:</b> " + Math.abs(-4.6) + "</p>" +
+			"<p><b>Random value using Math.random(),rand=:</b> " + rand + "</p>" +
+			"<p><b>Math.round(rand)=:</b> " + Math.round(rand) + "</p>" +
+			"<p><b>Math.ceil(rand)=:</b> " + Math.ceil(rand) + "</p>" +
+			"<p><b>Math.floor(rand)=:</b> " + Math.floor(rand) + "</p>" +
+			"<p><b>Math.sin(90 * Math.PI / 180) =:</b> " + Math.sin(90 * Math.PI / 180) + "</p>"
+			"<p><b>Math.cos(90 * Math.PI / 180) =:</b> " + Math.cos(90 * Math.PI / 180) + "</p><br><br><br>";
+			
+			
+
+		</script>
+</html>

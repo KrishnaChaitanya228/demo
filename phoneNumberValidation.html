@@ -1,0 +1,68 @@
+<html><head><script>
+function validate(){
+var num=document.myform.num.value;
+if (isNaN(num)){
+  document.getElementById("numloc").innerHTML="Enter Numeric value only";
+  return false;
+}
+else if(num.length==10)
+{
+ alert("Entered Phone Number is Valid");
+  }
+else{
+ document.getElementById("numloc").innerHTML="Enter 10 digit phno only";
+  return false;
+}
+var pn=document.myform.num.value;
+var dmt=document.getElementById("dmt").checked;
+var cn=document.getElementById("cn").checked;
+var cc=document.getElementById("cc").checked;
+var sup=document.getElementById("sup").checked;
+var orcs=document.getElementById("orcs").checked;
+var mpi=document.getElementById("mpi").checked;
+document.write("<br> Phone Number :"+pn+"<br> Subjects Interested in :<br>");
+if(dmt==true)
+{
+	document.write("DMT<br>");
+}
+if(cn==true)
+{
+	document.write("CN<br>");
+}
+if(cc==true)
+{
+	document.write("CC<br>");
+}
+if(sup==true)
+{
+	document.write("SUP<br>");
+}
+if(orcs==true)
+{
+	document.write("ORCS<br>");
+}
+if(mpi==true)
+{
+	document.write("MPI<br>");
+}
+const checkboxes = document.querySelectorAll('input[name="si"]:checked');
+}
+</script></head>
+<body>
+<form name="myform"       onsubmit="return validate()" >
+<br>
+<h3>Registration details</h3>
+<br>
+Number: <input type="text" name="num"><span id="numloc"></span><br/>
+<br>
+<p>Enter your subject intrests :</p>
+<br>
+Dmt : <input type="checkbox" name="si" value="dmt" id="dmt">
+Cn : <input type="checkbox" name="si"  value="cn" id="cn">
+CC : <input type="checkbox" name="si" value="cc"  id="cc">
+SUP : <input type="checkbox" name="si"  value="sup" id="sup">
+Orcs : <input type="checkbox" name="si"  value="orcs" id="orcs">
+Mpi : <input type="checkbox" name="si" value="mpi"  id="mpi">
+<br>
+<input type="submit" value="submit">
+</form></body></html>
