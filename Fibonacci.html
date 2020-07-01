@@ -1,0 +1,51 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fibonacci</title>
+  </head>
+
+  <body>
+
+
+      <script type="text/javascript">
+
+          var num =parseInt (prompt("Enter a number"))
+
+          if (num >=10 && num<=100)
+          {
+
+            document.write("The number is in range 10-100 <br>");
+            var n1=parseInt(0),n2=parseInt(1);
+            document.write("Fib series upto "+num+" elements<br>")
+
+
+            let arr = [0, 1];
+            for (let i = 2; i < num + 1; i++){
+              arr.push(arr[i - 2] + arr[i -1])
+            }
+            document.write(arr);
+            }
+
+          else
+          {
+            document.write("The number is not in th range 10-100 <br>");
+          }
+
+          try{
+            if (num == 0) throw "0";
+        }
+        catch(eer)
+        {
+          document.write("<h2>your input is ZERO brooo</h2>")
+        }
+        document.write("<br>5th word, 7th word and 10th word of the given text are:<br>");
+        var s="JavaScript (JS for short) is a full-fledged dynamic programming language that can add interactivity to a website. It was invented by Brendan Eich (co-founder of the Mozilla project), the Mozilla Foundation, and the Mozilla Corporation.";
+        var res=s.split(" ");
+        document.write("<br>5th , 7th ,11th elements in desc are:");
+        document.write("<br>"+res[5]+"<br>"+res[7]+"<br>"+res[10]);
+       
+        </script>
+
+
+  </body>
+</html>

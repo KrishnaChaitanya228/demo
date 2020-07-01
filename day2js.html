@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 2 js</title>
+</head>
+<body>
+	<h3>Printing Date in console</h3>
+	<h2>
+		<button onclick="displayDate()">The time is?</button>
+		<button onmouseover="mo()">Hover your mouse here!</button>
+		<p id="demo"></p>
+		<br>
+	</h2>
+
+</body>
+<script>
+	var date=new Date();
+	alert(date);
+	console.log(date);
+	function displayDate() {
+	  document.getElementById("demo").innerHTML = Date();
+	}
+	function mo(){
+		alert("mouseOverEvent");
+	}
+	
+
+
+</script>
+</html>
